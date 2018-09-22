@@ -18,7 +18,7 @@ body {
     min-height: 100%;
 }
 
-.ba-body {
+.ba-container {
     max-width: 800px;
     margin: 0 auto;
 }
@@ -46,6 +46,8 @@ small:before {
 
 small {
     font-size: 50%;
+    color: rgb(203, 199, 213);
+    /**/
 }
 
 small:after {
@@ -60,20 +62,21 @@ small:after {
 }
 
 .ba-list>li {
-    padding: 15px;
     border: 0px solid #fff;
 }
 
 .ba-list input {
-    margin-right: 15px;
+    margin-right: 5px;
+    width: 26px;
+    height: 26px;
+    vertical-align: middle;
 }
 
 .ba-list>li:nth-child(2n) {
     background-color: rgb(124, 114, 149);
 }
 
-.ba-list label:hover,
-.ba-list li:hover {
+.ba-list label:hover {
     cursor: pointer;
     background-color: rgb(100, 92, 121);
     border-width: 4px 0;
@@ -83,7 +86,12 @@ small:after {
     background-color: rgb(253, 114, 119);
 }
 
-[type=checkbox]:checked+span {
+[type="checkbox"]:checked+span {
     text-decoration: line-through;
     color: #a3a0b5;
+}
+
+label {
+    display: block;
+    padding: 15px;
 }
