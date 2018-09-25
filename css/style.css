@@ -46,8 +46,6 @@ small:before {
 
 small {
     font-size: 50%;
-    color: rgb(203, 199, 213);
-    /**/
 }
 
 small:after {
@@ -86,7 +84,8 @@ small:after {
     background-color: rgb(253, 114, 119);
 }
 
-[type="checkbox"]:checked+span {
+[type="checkbox"]:checked+span,
+[type="checkbox"]:checked+small {
     text-decoration: line-through;
     color: #a3a0b5;
 }
